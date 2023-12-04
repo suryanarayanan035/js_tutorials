@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Vehicle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./addvehicle.css" />
+
+    <script type="text/javascript" src="./addVehicle.js" defer></script>
+  </head>
+  <body>
+    <div class="root">
+      <div class="header">
+        <a href="./index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Add</a>
+        <a href="#">Login</a>
+      </div>
+      <div class="content">
+        <h2>Add Vehicle</h2>
+        <form id="add-car-form">
+          <div class="form-control">
+            <label>Title</label>
+            <input type="text" name="title" />
+          </div>
+          <div class="form-control">
+            <label>Kind</label>
+            <input type="radio" name="kind" value="car" /> Car
+            <input type="radio" name="kind" value="bike" /> Bike
+          </div>
+          <div class="form-control">
+            <label>Price</label>
+            <input type="text" name="price" />
+          </div>
+          <div class="form-control">
+            <label>Type</label>
+            <select name="type">
+              <option value="SUV">SUV</option>
+              <option value="XUV">XUV</option>
+              <option value="Sedan" selected>Sedan</option>
+              <option value="Hatchback">Hatchback</option>
+              <option value="Prime sedan">Prime Sedan</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label>Fuel</label>
+            <input type="checkbox" name="fuel" value="Petrol" /> Petrol
+            <input type="checkbox" name="fuel" value="Diesel" /> Diesel
+            <input type="checkbox" name="fuel" value="Electricty" /> Electricity
+            <input type="checkbox" name="fuel" value="CNG" /> CNG
+          </div>
+          <button class="add-car-btn" type="submit">Add Car</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

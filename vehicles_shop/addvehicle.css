@@ -1,0 +1,24 @@
+.form-control {
+    margin: 1rem;
+    display: flex;
+    gap: 16px;
+}
+
+.form-control label{
+    font-weight: bold;
+}
+
+.content h2{
+    text-align: center;
+}
+
+.add-car-btn {
+    border: none;
+    background-color: teal;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    margin: 1rem;
+    border-radius: 8px;
+}
